@@ -16,6 +16,24 @@ public class AppHandler extends ApplicationAdapter {
 
 	TextureRegion subImg;
 	int x, y;
+
+	int[][] worldIntArray = {{1,2,3,4},
+							 {1,3,2,4},
+							 {1,2,3,4},
+							 {1,3,2,4}};
+
+	int[][] Canvas = {{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+					  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+					  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+					  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+					  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+					  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+					  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+					  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+					  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+					  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+					  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+					  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}};
 	
 	@Override
 	public void create () {
@@ -30,14 +48,20 @@ public class AppHandler extends ApplicationAdapter {
 		ScreenUtils.clear(1, 0, 0, 1);
 		batch.begin();
 
-		for(int r = 0; r < Gdx.graphics.getHeight(); r+=64) {
-			for(int c = 0; c < Gdx.graphics.getWidth(); c+=64){
-				batch.draw(TileHandler.getTileHandler().getWorldTileArray().get(x++).getTexture(), c, r);
-				if(x > 5) {
-					x = 0;
-				}
+		for(int r = 0; r < Canvas.length; r++) {
+			for(int c = 0; c < Canvas[r].length; c++) {
+				batch.draw(TileHandler.getTileHandler().getWorldTileArray().get(Canvas[r][c]).getTexture(), c * 64, r * 64);
 			}
 		}
+
+//		for(int r = 0; r < Gdx.graphics.getHeight(); r+=64) {
+//			for(int c = 0; c < Gdx.graphics.getWidth(); c+=64){
+//				batch.draw(TileHandler.getTileHandler().getWorldTileArray().get(x++).getTexture(), c, r);
+//				if(x > 5) {
+//					x = 0;
+//				}
+//			}
+//		}
 
 		batch.end();
 
