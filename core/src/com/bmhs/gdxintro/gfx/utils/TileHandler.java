@@ -37,17 +37,25 @@ public class TileHandler {
         WorldTile redWorldTile = new WorldTile(tempRegion, 2, "red");
         worldTileArray.add(redWorldTile);
 
-        tempRegion = new TextureRegion(tempTexture, spriteOnSheetWidth * 0, spriteOnSheetHeight * 8, spriteOnSheetWidth, spriteOnSheetHeight);
-        WorldTile blueWorldTile = new WorldTile(tempRegion, 3, "blue");
-        worldTileArray.add(blueWorldTile);
+        tempRegion = new TextureRegion(tempTexture, spriteOnSheetWidth * 0, spriteOnSheetHeight * 7, spriteOnSheetWidth, spriteOnSheetHeight);
+        WorldTile lightBlueWorldTile = new WorldTile(tempRegion, 3, "lightblue");
+        worldTileArray.add(lightBlueWorldTile);
 
-        tempRegion = new TextureRegion(tempTexture, spriteOnSheetWidth * 0, spriteOnSheetHeight * 9, spriteOnSheetWidth, spriteOnSheetHeight);
-        WorldTile pinkWorldTile = new WorldTile(tempRegion, 4, "pink");
-        worldTileArray.add(pinkWorldTile);
+        tempRegion = new TextureRegion(tempTexture, spriteOnSheetWidth * 0, spriteOnSheetHeight * 8, spriteOnSheetWidth, spriteOnSheetHeight);
+        WorldTile blueWorldTile = new WorldTile(tempRegion, 4, "blue");
+        worldTileArray.add(blueWorldTile);
 
         tempRegion = new TextureRegion(tempTexture, spriteOnSheetWidth * 0, spriteOnSheetHeight * 4, spriteOnSheetWidth, spriteOnSheetHeight);
         WorldTile yellowWorldTile = new WorldTile(tempRegion, 5, "yellow");
         worldTileArray.add(yellowWorldTile);
+
+        tempRegion = new TextureRegion(tempTexture, spriteOnSheetWidth * 0, spriteOnSheetHeight * 1, spriteOnSheetWidth, spriteOnSheetHeight);
+        WorldTile greenWorldTile = new WorldTile(tempRegion, 5, "green");
+        worldTileArray.add(greenWorldTile);
+
+        tempRegion = new TextureRegion(tempTexture, spriteOnSheetWidth * 0, spriteOnSheetHeight * 3, spriteOnSheetWidth, spriteOnSheetHeight);
+        WorldTile lightGreenWorldTile = new WorldTile(tempRegion, 5, "lightgreen");
+        worldTileArray.add(lightGreenWorldTile);
 
     }
 
