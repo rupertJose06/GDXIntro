@@ -17,7 +17,7 @@ public class AppHandler extends ApplicationAdapter {
 	TextureRegion subImg;
 	int x, y;
 
-
+// 0=black, 1=white, 2=red, 3=lightblue, 4=blue, 5=yellow, 6=green, 7=lightgreen
 	int[][] Canvas = {{1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 					  {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 					  {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
@@ -62,7 +62,7 @@ public class AppHandler extends ApplicationAdapter {
 		}
 
 //		for(int r = 0; r < Gdx.graphics.getHeight(); r+=64) {
-//			for(int c = 0; c < Gdx.graphics.getWidth(); c+=64){
+//			for(int c = 0; c < Gdx.graphics.getWidth(); c+=64) {
 //				batch.draw(TileHandler.getTileHandler().getWorldTileArray().get(x++).getTexture(), c, r);
 //				if(x > 5) {
 //					x = 0;
