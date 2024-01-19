@@ -50,11 +50,11 @@ public class TileHandler {
         worldTileArray.add(yellowWorldTile);
 
         tempRegion = new TextureRegion(tempTexture, spriteOnSheetWidth * 0, spriteOnSheetHeight * 1, spriteOnSheetWidth, spriteOnSheetHeight);
-        WorldTile greenWorldTile = new WorldTile(tempRegion, 5, "green");
+        WorldTile greenWorldTile = new WorldTile(tempRegion, 6, "green");
         worldTileArray.add(greenWorldTile);
 
         tempRegion = new TextureRegion(tempTexture, spriteOnSheetWidth * 0, spriteOnSheetHeight * 3, spriteOnSheetWidth, spriteOnSheetHeight);
-        WorldTile lightGreenWorldTile = new WorldTile(tempRegion, 5, "lightgreen");
+        WorldTile lightGreenWorldTile = new WorldTile(tempRegion, 7, "lightgreen");
         worldTileArray.add(lightGreenWorldTile);
 
     }
