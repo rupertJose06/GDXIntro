@@ -24,6 +24,6 @@ public class WorldTile extends Tile {
     }
 
     public void setIsSolid() {
-         isSolid = true;
+        isSolid = true;
     }
 }
