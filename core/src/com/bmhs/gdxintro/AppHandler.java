@@ -15,6 +15,7 @@ public class AppHandler extends ApplicationAdapter {
 	Texture img;
 
 	TextureRegion subImg;
+
 	int x, y;
 
 	int[][] Canvas = {{1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1},
